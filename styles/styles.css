@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+}
+
+.tit,
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: #A0522D;
+}
+
+.container-productDes h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    color: #000;
+    /* Cambia si quieres otro color */
+}
+
+.section-producDes {
+    background-color: #F5E6D3;
+    padding: 10px 15% 20px 15%;
+
+}
+
+.btn-primary {
+    background: #A0522D;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.container-sub {
+    border: #A0522D;
+}
+
+
+.container-productDes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.container-productDes h2 {
+    margin: 0;
+    line-height: 1;
+
+}
+
+
+/* Cuadrícula de productos */
+.product-grid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-color: #F5E6D3;
+}
+
+/* Tarjeta de cada producto */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Importante para el posicionamiento del fondo */
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.404);
+    /* Fondo negro con 50% de transparencia */
+    color: white;
+    padding: 16px;
+}
+
+.product-info h3,
+.product-info p {
+    margin: 0 0 8px 0;
+    color: white;
+    /* Texto en blanco para contraste */
+}
+
+.product-info .product-price {
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+
+/* Imagen del producto */
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-img1 {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.product-img2 {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Título del producto */
+.product-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: #333;
+    margin: 12px 16px 8px;
+}
+
+/* Descripción del producto */
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0 16px 8px;
+    line-height: 1.4;
+}
+
+/* Precio del producto */
+.product-price {
+    font-weight: 700;
+    color: #A0522D;
+    margin: 0 16px 16px;
+    font-size: 18px;
+}
+
+.informa-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.largue {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
