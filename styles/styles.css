@@ -1,0 +1,61 @@
+    * {
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+   background-color: #F5E6D3; 
+ }
+
+.hero-banner {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;   /* Centra horizontalmente  */
+    justify-content: flex-start;
+    height: 100vh; 
+    text-align: center;
+    padding: 80px 20px 20px; 
+
+    background: url("../img/Sofá Patagonia.png") no-repeat center center/cover;  
+    background-size: 75rem;
+    background-color: #F5E6D3;
+    position: relative;
+}
+
+.titulo-hero{
+    font-weight: bold;
+    color: #A0522D;
+    margin-bottom: 25px;
+}
+
+.subtitulo-hero{
+    color: #A0522D;
+    margin-bottom: 25px;
+}
+
+.boton-hero{
+    display: inline-block;
+    background-color: #A0522D;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+
+.boton-hero:hover {
+    background-color: #8B4513;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+ 
+@media (min-width: 768px){
+
+    .titulo-hero{
+         font-size: 2.8rem;
+    }
+
+    .subtitulo-hero{
+        width: 31%;
+    }
+}
