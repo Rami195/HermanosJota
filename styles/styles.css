@@ -48,33 +48,31 @@
     /* ------------------------------------------------ HERO ------------------------------------------------------------------------------------ 
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
     .hero-banner {
-        font-family: sans-serif;
         display: flex;
+        font-family: sans-serif;
         flex-direction: column;
-        justify-content: center;
-        /* Centra verticalmente */
-        align-items: center;
-        /* Centra horizontalmente  */
-        justify-content: flex-start;
-        height: 100vh;
-        text-align: center;
-        padding: 80px 20px 20px;
-
-        background: url("../img/Sofá Patagonia.png") no-repeat center center/cover;
-        background-size: 75rem;
-        background-color: #F5E6D3;
-        position: relative;
-    }
+        justify-content: center;   /* Centra verticalmente */
+        align-items: center;     /* Centra horizontalmente  */
+        justify-content: center;   /* flex-start para que aparezca al inicio */
+        text-align: center;        
+        padding: 20px; 
+        background: url("/img/Sofá\ Patagonia.png") no-repeat center center/cover;  
+        color: #A0522D;
+        }
 
     .titulo-hero {
         font-weight: bold;
         color: #A0522D;
         margin-bottom: 25px;
+        font-size: 4rem;
     }
 
     .subtitulo-hero {
         color: #A0522D;
         margin-bottom: 25px;
+        max-width: 600px;
+        line-height: 1.5;
+        font-size: 1.2rem;
     }
 
     .boton-hero {
