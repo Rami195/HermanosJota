@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Hermanos Jota</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <style>
+        nav {
+            background-color: #F5E6D3;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+        nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: rgb(90, 80, 80);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <nav>
+        <div class="logo">
+            <img src="../img/logo.svg" alt="Logo Hermanos Jota" />
+            <span style="color: rgb(90, 80, 80); font-weight: bold">Hermanos Jota</span>
+        </div>
+        <ul>
+            <li><a href="(Catalogo)index.html">Catálogo</a></li>
+            <li><a href="(manual de marca)index.html">Manual de Marca</a></li>
+            <li><a href="(Catalogo)index.html#indice">Productos</a></li>
+            <li><a href="(manual de marca)index.html#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    </div>
 </body>
 </html>
