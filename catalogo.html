@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
@@ -16,17 +17,94 @@
                     <span style="color: rgb(90, 80, 80); font-weight: bold">Hermanos Jota</span>
                 </div>
                 <ul>
-                    <li><a href="(Catalogo)index.html">Catálogo</a></li>
-                    <li><a href="(manual de marca)index.html">Manual de Marca</a></li>
-                    <li><a href="(Catalogo)index.html#indice">Productos</a></li>
-                    <li><a href="(manual de marca)index.html#contacto">Contacto</a></li>
+                    <li><a href="/catalogo.html">Catálogo</a></li>
+                    <li><a href="">Manual de Marca</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="/Contact.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="catalogo">
+        <aside class="catalogo-filters">
+            <h3>Filtrar por</h3>
+            <label for="coleccion">Colección</label>
+            <select id="coleccion">
+                <option>Todos</option>
+                <option>Living</option>
+                <option>Comedor</option>
+                <option>Dormitorio</option>
+            </select>
 
+            <label for="color">Color</label>
+            <select id="color">
+                <option>Todos</option>
+                <option>Madera clara</option>
+                <option>Madera oscura</option>
+                <option>Blanco</option>
+            </select>
+
+            <label for="category">Categoría</label>
+            <select id="category">
+                <option>Todos</option>
+                <option>Sillas</option>
+                <option>Mesas</option>
+                <option>Bibliotecas</option>
+            </select>
+
+            <label for="price">Rango de precio</label>
+            <input type="range" id="price" min="0" max="1000000" step="50000">
+            <span id="priceValue">$0 - $1.000.000+</span>
+        </aside>
+
+        <section class="catalogo-products">
+            <div class="catalogo-header">
+                <input type="search" id="search" placeholder="Buscar productos..." />
+            </div>
+
+            <div class="catalogo-grid">
+              
+                <div class="catalogo-card">
+                    <img src="../img/Aparador Uspallata.png" class="catalogo-img" alt="Aparador Uspallata">
+                    <div class="catalogo-info">
+                        <h3>Aparador Uspallata</h3>
+                        <p>Aparador artesanal de algarrobo con acabados naturales.</p>
+                        <span class="catalogo-price">$520.000</span>
+                    </div>
+                </div>
+
+        
+                <div class="catalogo-card">
+                    <img src="../img/Biblioteca Recoleta.png" class="catalogo-img" alt="Biblioteca Recoleta">
+                    <div class="catalogo-info">
+                        <h3>Biblioteca Recoleta</h3>
+                        <p>Diseño modular en madera FSC, estantes ajustables.</p>
+                        <span class="catalogo-price">$460.000</span>
+                    </div>
+                </div>
+
+             
+                <div class="catalogo-card">
+                    <img src="../img/Butaca Mendoza.png" class="catalogo-img" alt="Butaca Mendoza">
+                    <div class="catalogo-info">
+                        <h3>Butaca Mendoza</h3>
+                        <p>Tapizado de lino natural, base maciza de quebracho.</p>
+                        <span class="catalogo-price">$180.000</span>
+                    </div>
+                </div>
+
+                <div class="catalogo-card">
+                    <img src="../img/Escritorio Costa.png" class="catalogo-img" alt="Escritorio Costa">
+                    <div class="catalogo-info">
+                        <h3>Escritorio Costa</h3>
+                        <p>Superficie amplia, ideal para home office sustentable.</p>
+                        <span class="catalogo-price">$350.000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="box">
             <div class="flex-items">
@@ -47,7 +125,6 @@
                 <p><strong>Instagram</strong> <a href="#">@hermanosjota_ba</a></p>
                 <p><strong>WhatsApp</strong> <a href="#">+54 11 4567-8900</a></p>
             </div>
-            
             <div>
                 <p> <strong>Horarios:</strong></p>
                 <p>Lunes a Viernes: 10:00 - 19:00</p>
