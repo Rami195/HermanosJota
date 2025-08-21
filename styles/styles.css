@@ -2,35 +2,33 @@
    margin: 0; 
    padding: 0; 
    box-sizing: border-box; 
-   background-color: #F5E6D3; 
  }
 
 .hero-banner {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;   /* Centra horizontalmente  */
-    justify-content: flex-start;
     height: 100vh; 
-    text-align: center;
-    padding: 80px 20px 20px; 
-
-    background: url("../img/Sofá Patagonia.png") no-repeat center center/cover;  
-    background-size: 75rem;
-    background-color: #F5E6D3;
-    position: relative;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: center;   /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente  */
+    justify-content: center;   /* flex-start para que aparezca al inicio */
+    text-align: center;        
+    padding: 20px; 
+    background: url("../img/Sofá\ Patagonia.png") no-repeat center center/cover;  
+    color: #A0522D;
 }
 
-.titulo-hero{
+.hero-banner h1{
     font-weight: bold;
-    color: #A0522D;
     margin-bottom: 25px;
+    font-size: 4rem;
 }
 
-.subtitulo-hero{
-    color: #A0522D;
+.hero-banner p{
     margin-bottom: 25px;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
 }
 
 .boton-hero{
@@ -51,11 +49,11 @@
  
 @media (min-width: 768px){
 
-    .titulo-hero{
-         font-size: 2.8rem;
+    .hero-banner h1{
+        font-size: 2.5rem;
     }
 
-    .subtitulo-hero{
-        width: 31%;
+    .hero-banner p{
+        font-size: 1.2rem;
     }
 }
