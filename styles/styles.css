@@ -434,3 +434,79 @@
         color: #A0522D;
         font-size: 1rem;
     }
+
+/* ---------------------------------------------------- CONTACTO ------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.seccioncontac {
+    background-color: #f5e6d3;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;
+}
+    /* Tarjeta del formulario */
+.formulario {
+    background: #f5e6d3;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* da profundidad */
+    width: 400px;
+}
+
+/* Titulo */
+.formulario h1 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    color: #87a96b;
+    text-align: center;
+}
+
+/* Msj del formulario */
+.formulario p {
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    color:black;
+    text-align: center;
+}
+
+/* FORMULARIO */
+.campo {
+    margin-bottom: 15px;
+}
+
+/* Letras en negrita */
+.campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #87a96b;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+
+.campo textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Boton de ENVIAR*/
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #87a96b;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <div class="logo">
+            <img src="./img/logo.svg" alt="Logo Hermanos Jota" />
+            <span style="color: rgb(90, 80, 80); font-weight: bold"
+              >Hermanos Jota</span
+            >
+          </div>
+          <ul>
+            <li><a href="/catalogo.html">Catálogo</a></li>
+            <li><a href="">Manual de Marca</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="/Contact.html">Contacto</a></li>
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="seccioncontac">
+      <div class="contenedor">
+        <form class="formulario" method="post" action="#">
+          <h1>Contacto</h1>
+          <p>Completá el formulario y te responderemos a la brevedad.</p>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input
+              id="nombre"
+              name="nombre"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribí tu mensaje..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="box">
+        <div class="flex-items">
+          <h1>SHOWROOM Y TALLER</h1>
+          <p><strong>Hermanos Jota — Casa Taller</strong></p>
+          <p>Av. San Juan 2847</p>
+          <p>C1232AAB — Barrio de San Cristóbal</p>
+          <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+        </div>
+        <div class="flex-items">
+          <h1>CONTACTO DIGITAL</h1>
+          <p>
+            <strong>Sitio web</strong> <a href="#">www.hermanosjota.com.ar</a>
+          </p>
+          <p>
+            <strong>Email general</strong>
+            <a href="#">info@hermanosjota.com.ar</a>
+          </p>
+          <p>
+            <strong>Ventas</strong> <a href="#">ventas@hermanosjota.com.ar</a>
+          </p>
+          <p><strong>Instagram</strong> <a href="#">@hermanosjota_ba</a></p>
+          <p><strong>WhatsApp</strong> <a href="#">+54 11 4567-8900</a></p>
+        </div>
+        <div>
+          <p><strong>Horarios:</strong></p>
+          <p>Lunes a Viernes: 10:00 - 19:00</p>
+          <p>Sábados: 10:00 - 14:00</p>
+        </div>
+      </div>
+      <div class="copy">
+        <p>
+          <strong>© 2025 Hermanos Jota.</strong> Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
