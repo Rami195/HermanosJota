@@ -365,7 +365,7 @@ a.btn,
 /* ================== HERO (home) ================== */
 .hero-banner {
     display: flex;
-   
+
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -384,7 +384,7 @@ a.btn,
     align-items: center;
     justify-content: center;
     align-content: center;
-    text-align: center; 
+    text-align: center;
     width: 30%;
     margin-bottom: 200px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -409,7 +409,7 @@ a.btn,
     width: 100%;
     font-weight: 500;
 
-    
+
 }
 
 .boton-hero {
@@ -428,6 +428,51 @@ a.btn,
     box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
 }
 
+/* Sobre nosotros */
+.sobre-hj {
+    padding: 200px 15% 0px 15%;
+    background: var(--c-alabastro);
+ 
+}
+
+.container-sobre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    text-align: center;
+}
+
+.item-sobre {
+  padding: 20px;
+  border-left: 2px solid var(--c-siena);
+}
+
+.item-sobre:first-child {
+  border-left: none; 
+}
+
+
+.item-sobre h3 {
+    font-family: var(--ff-serif);
+    font-weight: 700;
+    color: var(--c-siena);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.item-sobre h4 {
+    font-family: var(--ff-serif);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--ink);
+}
+
+.item-sobre p {
+    font-size: .95rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
 
 /* ================== DESTACADOS (home) ================== */
 .tit,
@@ -447,8 +492,9 @@ h1 {
 
 .section-producDes {
     background-color: var(--c-alabastro);
-    padding: 10px 15% 20px 15%;
+    padding: 10px 15% 100px 15%;
     padding-top: 150px;
+
 }
 
 .container-sub {
@@ -488,8 +534,9 @@ h1 {
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171);
     position: relative;
+    cursor: pointer;
 }
 
 .product-info {
