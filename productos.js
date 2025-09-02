@@ -133,7 +133,7 @@ export default [
             peso: 0,
             descripcion: "Cama plataforma con cabecero flotante tapizado en lino natural y estructura de madera maciza. Su diseño minimalista y sofisticado crea un ambiente de serenidad y elegancia, perfecto para dormitorios contemporáneos que buscan paz y simplicidad.",
             colores: [],
-            imagen: "./img/Cama Nehuquen.png || "
+            imagen: "./img/Cama Nehuquen.png"
         },
         {
             id: 9,
