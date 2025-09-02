@@ -1,94 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <style>
-        .s-product {
-        padding: 40px 15%;
-        background-color: #F5E6D3;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sofá Patagonia — Hermanos Jota</title>
 
-    .s-product-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        background: white;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        align-items: center;
-    }
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 
-    .s-product-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(224, 222, 222);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .s-product-main-image {
-     width: 100%;
-    }
-
-    .s-product-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .s-product-title {
-        font-family: 'Playfair Display', Georgia, serif;
-        font-size: 2rem;
-        color: #A0522D;
-    }
-
-    .s-product-price {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #A0522D;
-    }
-
-    .s-product-features {   
-        list-style: none;
-        margin: 1rem 0;
-    }
-
-    .s-product-features li {
-        margin: 1rem 0;
-    }
-
-    .s-product-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .s-product-variant {
-        padding: 0.8rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-    }
-
-    .btn-primary {
-        padding: 1rem;
-        font-size: 1.1rem;
-        transition: all 0.3s ease;
-    }
-
-    .btn-primary:hover {
-        background: #8B4513;
-        transform: translateY(-2px);
-    }
-
-    </style>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 </head>
 
 <body>
@@ -96,51 +23,150 @@
         <div>
             <nav>
                 <div class="logo">
+           
                     <img src="./img/logo.svg" alt="Logo Hermanos Jota" />
-                    <span style="color: rgb(90, 80, 80); font-weight: bold">Hermanos Jota</span>
+                    <span class="logo-tit">Hermanos Jota</span>
                 </div>
                 <ul>
                     <li><a href="/index.html">Inicio</a></li>
                     <li><a href="/catalogo.html">Catálogo</a></li>
                     <li><a href="/Contact.html">Contacto</a></li>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
                 </ul>
             </nav>
         </div>
     </header>
+    <main class="container">
+        <article class="card card-row">
+            <!-- IMG + DESCRIPCIÓN -->
+            <section class="media">
+                <img src="./img/Sofá Patagonia.png" alt="Sofá Patagonia gris piedra con patas de madera">
+                <div class="desc">
+                    El <strong>Sofá Moderno Patagonia</strong> ofrece líneas simples y cálidas con tapizado
+                    premium y patas de madera maciza. Espuma de alta densidad para confort diario.
+                </div>
+            </section>
 
-    <main class="s-product">
-        <div class="s-product-card">
-            <div class="s-product-image">
-                <img src="./img/Sofá Patagonia.png" alt="Sofá Moderno" class="s-product-main-image">
-            </div>
-        <div class="s-product-info">
-            <h1 class="s-product-title">Sofá Moderno Patagonia</h1>
-            <p class="s-product-price">$299.999</p>
-            <div class="s-product-description">
-                <p>Sofá de 3 cuerpos tapizado en tela premium antimanchas.</p>
-                <ul class="s-product-features">
-                    <li>Material: Tela premium</li>
-                    <li>Dimensiones: 220cm x 90cm x 85cm</li>
-                    <li>Color: Gris piedra</li>
-                    <li>Estructura: Madera maciza</li>
-                </ul>
-            </div>
-            <div class="s-product-actions">
-                <select class="product-variant">
-                    <option>Seleccionar color</option>
-                    <option>Gris piedra</option>
-                    <option>Beige</option>
-                    <option>Azul marino</option>
-                </select>
-                <button class="btn-primary">Agregar al carrito</button>
-            </div>
-        </div>
+            <!-- INFO -->
+            <section class="info">
+                <span class="eyebrow">Línea Patagonia</span>
+                <h1 class="h1">Sofá Moderno Patagonia</h1>
 
-        </div>
+                <p class="p-2 text-siena" style="font-weight:800; padding-left:0">$299.999</p>
 
+                <div class="mt-2">
+                    <h3 class="h2" style="font-size:1rem">Color</h3>
+                    <div class="colors">
+                        <button class="swatch active" style="background:#808080" data-color="Gris piedra"
+                            aria-label="Gris piedra"></button>
+                        <button class="swatch" style="background:#d2b48c" data-color="Arena"
+                            aria-label="Arena"></button>
+                        <button class="swatch" style="background:#003366" data-color="Azul noche"
+                            aria-label="Azul noche"></button>
+                        <span class="chosen">Seleccionado: <strong id="selColor">Gris piedra</strong></span>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <h3 class="h2" style="font-size:1rem">Medidas y peso</h3>
+                    <table class="table">
+                        <tr>
+                            <td>height</td>
+                            <td>85 cm</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>220 cm</td>
+                        </tr>
+                        <tr>
+                            <td>depth</td>
+                            <td>90 cm</td>
+                        </tr>
+                        <tr>
+                            <td>weight</td>
+                            <td>45 kg</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mt-3">
+                    <h3 class="h2" style="font-size:1rem">Materiales</h3>
+                    <table class="table">
+                        <tr>
+                            <td>seat</td>
+                            <td>Tela premium anti-pilling</td>
+                        </tr>
+                        <tr>
+                            <td>legs</td>
+                            <td>Madera maciza lustrada</td>
+                        </tr>
+                        <tr>
+                            <td>estructura</td>
+                            <td>Madera estacionada</td>
+                        </tr>
+                        <tr>
+                            <td>relleno</td>
+                            <td>Espuma HR + fibras siliconadas</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mt-3" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+                    <button class="btn btn-primary" id="addCart" data-id="sofapatagonia"
+                        data-name="Sofá Moderno Patagonia">Agregar al carrito</button>
+                    <a class="btn btn-ghost" href="./catalogo.html">Volver al catálogo</a>
+                    <span id="hint" class="text-muted" aria-live="polite"></span>
+                </div>
+            </section>
+        </article>
     </main>
 
+    <!-- SIMILARES -->
+    <section class="container" style="margin-top:26px; margin-bottom:60px">
+        <h2 class="h2" style="font-size:1.25rem">Productos similares</h2>
+        <div class="grid">
+            <article class="p-card">
+                <img class="p-img" src="./img/similar-sofa-nordico.jpg" alt="Sofá Nórdico 3 cuerpos">
+                <div class="p-body">
+                    <h3 class="p-name">Sofá Nórdico 3C</h3>
+                    <p class="p-price">$259.999</p>
+                    <div style="display:flex; gap:8px">
+                        <a class="btn btn-ghost" href="./producto.html?id=sofa-nordico">Ver</a>
+                        <button class="btn btn-primary" data-id="sofa-nordico"
+                            data-name="Sofá Nórdico 3C">Agregar</button>
+                    </div>
+                </div>
+            </article>
 
+            <article class="p-card">
+                <img class="p-img" src="./img/similar-sofa-l.jpg" alt="Sofá en L Milano">
+                <div class="p-body">
+                    <h3 class="p-name">Sofá en L Milano</h3>
+                    <p class="p-price">$329.999</p>
+                    <div style="display:flex; gap:8px">
+                        <a class="btn btn-ghost" href="./producto.html?id=sofa-l-milano">Ver</a>
+                        <button class="btn btn-primary" data-id="sofa-l-milano"
+                            data-name="Sofá en L Milano">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="p-card">
+                <img class="p-img" src="./img/similar-loveseat.jpg" alt="Loveseat Andes 2 cuerpos">
+                <div class="p-body">
+                    <h3 class="p-name">Loveseat Andes</h3>
+                    <p class="p-price">$189.999</p>
+                    <div style="display:flex; gap:8px">
+                        <a class="btn btn-ghost" href="./producto.html?id=loveseat-andes">Ver</a>
+                        <button class="btn btn-primary" data-id="loveseat-andes"
+                            data-name="Loveseat Andes">Agregar</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <footer>
         <div class="box">
@@ -150,9 +176,6 @@
                 <p>Av. San Juan 2847</p>
                 <p>C1232AAB — Barrio de San Cristóbal</p>
                 <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
-
-
-
             </div>
             <div class="flex-items">
                 <h1>CONTACTO DIGITAL</h1>
@@ -162,8 +185,9 @@
                 <p><strong>Instagram</strong> <a href="#">@hermanosjota_ba</a></p>
                 <p><strong>WhatsApp</strong> <a href="#">+54 11 4567-8900</a></p>
             </div>
-            <div>
-                <p> <strong>Horarios:</strong></p>
+
+            <div class="flex-items">
+                <h1>Horarios</h1>
                 <p>Lunes a Viernes: 10:00 - 19:00</p>
                 <p>Sábados: 10:00 - 14:00</p>
             </div>
@@ -171,8 +195,50 @@
         <div class="copy">
             <p><strong>© 2025 Hermanos Jota.</strong> Todos los derechos reservados.</p>
         </div>
-
     </footer>
+
+    <!-- JS -->
+    <script>
+        // Navbar: solo agrega sombra al hacer scroll; no se oculta
+        (function () {
+            const header = document.querySelector('header');
+            function onScroll() {
+                if (window.scrollY > 2) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            }
+            onScroll();
+            window.addEventListener('scroll', onScroll, { passive: true });
+        })();
+
+        // Selector de color
+        const swatches = document.querySelectorAll('.swatch');
+        const sel = document.getElementById('selColor');
+        swatches.forEach(s => {
+            s.addEventListener('click', () => {
+                swatches.forEach(x => x.classList.remove('active'));
+                s.classList.add('active');
+                sel.textContent = s.dataset.color;
+            });
+        });
+
+        // Carrito (detalle)
+        const add = document.getElementById('addCart');
+        const hint = document.getElementById('hint');
+        add?.addEventListener('click', () => {
+            document.dispatchEvent(new CustomEvent('cart:add', { detail: { id: add.dataset.id, name: add.dataset.name, qty: 1 } }));
+            hint.textContent = '✔ Agregado al carrito';
+            setTimeout(() => hint.textContent = '', 1800);
+        });
+
+        // Carrito (similares)
+        document.querySelectorAll('.p-card .btn.btn-primary').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.dispatchEvent(new CustomEvent('cart:add', { detail: { id: btn.dataset.id, name: btn.dataset.name, qty: 1 } }));
+                const t = btn.textContent;
+                btn.textContent = 'Agregado ✔'; setTimeout(() => btn.textContent = t, 1200);
+            });
+        });
+    </script>
 </body>
 
 </html>
