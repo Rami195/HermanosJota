@@ -38,89 +38,9 @@
             </nav>
         </div>
     </header>
-    <main class="container">
-        <article class="card card-row">
-            <!-- IMG + DESCRIPCIÓN -->
-            <section class="media">
-                <img src="./img/Sofá Patagonia.png" alt="Sofá Patagonia gris piedra con patas de madera">
-                <div class="desc">
-                    El <strong>Sofá Moderno Patagonia</strong> ofrece líneas simples y cálidas con tapizado
-                    premium y patas de madera maciza. Espuma de alta densidad para confort diario.
-                </div>
-            </section>
-
-            <!-- INFO -->
-            <section class="info">
-                <span class="eyebrow">Línea Patagonia</span>
-                <h1 class="h1">Sofá Moderno Patagonia</h1>
-
-                <p class="p-2 text-siena" style="font-weight:800; padding-left:0">$299.999</p>
-
-                <div class="mt-2">
-                    <h3 class="h2" style="font-size:1rem">Color</h3>
-                    <div class="colors">
-                        <button class="swatch active" style="background:#808080" data-color="Gris piedra"
-                            aria-label="Gris piedra"></button>
-                        <button class="swatch" style="background:#d2b48c" data-color="Arena"
-                            aria-label="Arena"></button>
-                        <button class="swatch" style="background:#003366" data-color="Azul noche"
-                            aria-label="Azul noche"></button>
-                        <span class="chosen">Seleccionado: <strong id="selColor">Gris piedra</strong></span>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <h3 class="h2" style="font-size:1rem">Medidas y peso</h3>
-                    <table class="table">
-                        <tr>
-                            <td>height</td>
-                            <td>85 cm</td>
-                        </tr>
-                        <tr>
-                            <td>width</td>
-                            <td>220 cm</td>
-                        </tr>
-                        <tr>
-                            <td>depth</td>
-                            <td>90 cm</td>
-                        </tr>
-                        <tr>
-                            <td>weight</td>
-                            <td>45 kg</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="mt-3">
-                    <h3 class="h2" style="font-size:1rem">Materiales</h3>
-                    <table class="table">
-                        <tr>
-                            <td>seat</td>
-                            <td>Tela premium anti-pilling</td>
-                        </tr>
-                        <tr>
-                            <td>legs</td>
-                            <td>Madera maciza lustrada</td>
-                        </tr>
-                        <tr>
-                            <td>estructura</td>
-                            <td>Madera estacionada</td>
-                        </tr>
-                        <tr>
-                            <td>relleno</td>
-                            <td>Espuma HR + fibras siliconadas</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="mt-3" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
-                    <button class="btn btn-primary" id="addCart" data-id="sofapatagonia"
-                        data-name="Sofá Moderno Patagonia">Agregar al carrito</button>
-                    <a class="btn btn-ghost" href="./catalogo.html">Volver al catálogo</a>
-                    <span id="hint" class="text-muted" aria-live="polite"></span>
-                </div>
-            </section>
-        </article>
+    <main class="container" id="container">
+        <!-- Detalle cargado por JS -->
+        
     </main>
 
     <!-- SIMILARES -->
@@ -198,7 +118,9 @@
     </footer>
 
     <!-- JS -->
-    <script>
+    <script src="./detalle.js" type="module">
+        
+    
         // Navbar: solo agrega sombra al hacer scroll; no se oculta
         (function () {
             const header = document.querySelector('header');
