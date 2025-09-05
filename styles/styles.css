@@ -718,7 +718,7 @@ footer {
     color: #fff;
     background-color: var(--c-siena);
     line-height: 1.6;
-    width: 100vw;
+    width: 100%;
     font-size: 11pt;
     padding: 50px 15% 20px 15%;
 }
