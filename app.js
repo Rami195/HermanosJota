@@ -121,6 +121,9 @@ function mostrarProductos(lista) {
         <span class="catalogo-price">$${producto.precio}</span>
       </div>
     `;
+     card.addEventListener("click", () => {
+        window.location.href = `product.html?id=${producto.id}`;
+      });
     contenedor.appendChild(card);
   });
 }
