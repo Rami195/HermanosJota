@@ -2,9 +2,9 @@ export default [
         {
             id: 1,
             nombre: "Sofa Patagonia",
-            precio: 1000,
+            precio: 10000,
             stock: 10,
-            categoria: "sofa",
+            categoria: "Sofa",
             medidas: {
                 ancho: 220,
                 altura: 90,
@@ -21,7 +21,7 @@ export default [
             nombre: "Aparador Uspallata",
             precio: 1000,
             stock: 10,
-            categoria: "otros",
+            categoria: "Otros",
             medidas: {
                 ancho: 180,
                 altura: 75,
@@ -38,7 +38,7 @@ export default [
             nombre: "Biblioteca Recoleta",
             precio: 1000,
             stock: 10,
-            categoria: "otros",
+            categoria: "Otros",
             medidas: {
                 ancho: 200,
                 altura: 100,
@@ -55,7 +55,7 @@ export default [
             nombre: "Butaca Mendoza",
             precio: 1000,
             stock: 10,
-            categoria: "sofa",
+            categoria: "Sofa",
             medidas: {
                 ancho: 80,
                 altura: 75,
@@ -72,7 +72,7 @@ export default [
             nombre: "Sillón Copacabana",
             precio: 1000,
             stock: 10,
-            categoria: "sofa",
+            categoria: "Sofa",
             medidas: {
                 ancho: 90,
                 altura: 85,
@@ -89,7 +89,7 @@ export default [
             nombre: "Mesa de Centro Araucaria",
             precio: 1000,
             stock: 10,
-            categoria: "mesa",
+            categoria: "Mesa",
             medidas: {
                 ancho: 90,
                 altura: 90,
@@ -106,7 +106,7 @@ export default [
             nombre: "Mesa de noche Aconcagua",
             precio: 1000,
             stock: 10,
-            categoria: "mesa",
+            categoria: "Mesa",
             medidas: {
                 ancho: 45,
                 altura: 35,
@@ -140,7 +140,7 @@ export default [
             nombre: "Mesa comedor Pampa",
             precio: 1000,
             stock: 10,
-            categoria: "mesa",
+            categoria: "Mesa",
             medidas: {
                 ancho: "160-240",
                 altura: 75,
@@ -174,7 +174,7 @@ export default [
             nombre: "Escritorio Costa",
             precio: 1000,
             stock: 10,
-            categoria: "otros",
+            categoria: "Otros",
             medidas: {
                 ancho: 120,
                 altura: 60,
@@ -191,7 +191,7 @@ export default [
             nombre: "Silla de trabajo Belgrano",
             precio: 1000,
             stock: 10,
-            categoria: "otros",
+            categoria: "Otros",
             medidas: {
                 ancho: 60,
                 altura: "90-100",
