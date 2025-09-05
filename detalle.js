@@ -75,6 +75,32 @@ contenedor.innerHTML = `
                     `;
     })
 
+
+const similaresGrid = document.getElementById("similaresGrid");
+
+// Generar dinámicamente las tarjetas de productos similares
+const productosSimilares = productos.filter(p => p.categoria === producto.categoria && p.id !== producto.id);
+productosSimilares.forEach(p => {
+  const card = document.createElement("article");
+  card.classList.add("p-card");
+
+  card.innerHTML = `
+    <img class="p-img" src="${p.imagen}" alt="${p.alt}">
+    <div class="p-body">
+      <h3 class="p-name">${p.nombre}</h3>
+      <p class="p-price">$${p.precio.toLocaleString("es-AR")}</p>
+      <div style="display:flex; gap:8px">
+        <a class="btn btn-ghost" href="./product.html?id=${p.id}">Ver</a>
+        <button class="btn btn-primary" data-id="${p.id}" data-name="${p.nombre}">
+          Agregar
+        </button>
+      </div>
+    </div>
+  `;
+
+  similaresGrid.appendChild(card);
+});
+
     
                 
 
