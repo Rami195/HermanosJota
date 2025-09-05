@@ -874,6 +874,40 @@ footer a:hover {
     font-size: 1rem;
 }
 
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.page-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: .45rem .8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.page-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.page-btn.active {
+  background: var(--c-siena);
+  color: #fff;
+  border-color: var(--c-siena);
+}
+.page-btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 1.5rem 0;
+  grid-column: 1 / -1;
+  font-style: italic;
+}
+
 /* ================== CONTACTO ================== */
 .seccioncontac {
     background-color: #f5e6d3;
