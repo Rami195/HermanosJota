@@ -270,6 +270,22 @@ a.btn,
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 768px) {
+  .card-row {
+    grid-template-columns: 1fr;
+  }
+
+  .media {
+    order: 2; /* 👈 va segundo */
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info {
+    order: 1; /* 👈 va primero */
+    padding-top: 16px;
+  }
+}
 
 .media {
     background: linear-gradient(#f9f4ee, #ede2d6);
@@ -340,8 +356,9 @@ a.btn,
 
 .p-img {
     width: 100%;
+    height: 200px;
     aspect-ratio: 4/3;
-    object-fit: cover;
+    object-fit:cover;
     background: #eee;
 }
 
