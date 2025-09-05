@@ -42,14 +42,7 @@
     <main class="catalogo">
         <aside class="catalogo-filters">
             <h3>Filtrar por</h3>
-            <label for="coleccion">Colección</label>
-            <select id="coleccion">
-                <option>Todos</option>
-                <option>Living</option>
-                <option>Comedor</option>
-                <option>Dormitorio</option>
-            </select>
-
+         
             <label for="color">Color</label>
             <select id="color">
                 <option>Todos</option>
@@ -63,7 +56,7 @@
                 <option>Todos</option>
                 <option>Sillas</option>
                 <option>Mesas</option>
-                <option>Bibliotecas</option>
+                <option>Otros</option>
             </select>
 
             <label for="price">Rango de precio</label>
@@ -76,9 +69,10 @@
                 <input type="search" id="search" placeholder="Buscar productos..." />
             </div>
 
-            <div id="catalogo-grid" class="catalogo-grid">
-                <!-- Aquí se insertan los productos dinámicamente -->
-            </div>
+           
+            <div id="catalogo-grid" class="catalogo-grid"></div>
+            <nav id="paginacion" class="paginacion" aria-label="Paginación de productos"></nav>
+
         </section>
     </main>
 
@@ -113,7 +107,7 @@
         </div>
 
     </footer>
-<script type="module" src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>

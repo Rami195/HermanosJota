@@ -8,11 +8,8 @@
 /* ================== TOKENS ================== */
 :root {
     --c-siena: #A0522D;
-    /* marca */
     --c-salvia: #87A96B;
-    /* acento */
     --c-alabastro: #F5E6D3;
-    /* fondo cálido */
     --c-oro: #D4A437;
     --c-rosa: #C47A6D;
 
@@ -533,7 +530,7 @@ a.btn,
 .sobre-hj {
     padding: 200px 15% 0px 15%;
     background: var(--c-alabastro);
- 
+
 }
 
 .container-sobre {
@@ -544,12 +541,12 @@ a.btn,
 }
 
 .item-sobre {
-  padding: 20px;
-  border-left: 2px solid var(--c-siena);
+    padding: 20px;
+    border-left: 2px solid var(--c-siena);
 }
 
 .item-sobre:first-child {
-  border-left: none; 
+    border-left: none;
 }
 
 
@@ -721,7 +718,7 @@ footer {
     color: #fff;
     background-color: var(--c-siena);
     line-height: 1.6;
-    width: 100vw;
+    width: 100%;
     font-size: 11pt;
     padding: 50px 15% 20px 15%;
 }
