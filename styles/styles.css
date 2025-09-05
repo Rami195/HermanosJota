@@ -8,11 +8,8 @@
 /* ================== TOKENS ================== */
 :root {
     --c-siena: #A0522D;
-    /* marca */
     --c-salvia: #87A96B;
-    /* acento */
     --c-alabastro: #F5E6D3;
-    /* fondo cálido */
     --c-oro: #D4A437;
     --c-rosa: #C47A6D;
 
@@ -432,7 +429,7 @@ a.btn,
 .sobre-hj {
     padding: 200px 15% 0px 15%;
     background: var(--c-alabastro);
- 
+
 }
 
 .container-sobre {
@@ -443,12 +440,12 @@ a.btn,
 }
 
 .item-sobre {
-  padding: 20px;
-  border-left: 2px solid var(--c-siena);
+    padding: 20px;
+    border-left: 2px solid var(--c-siena);
 }
 
 .item-sobre:first-child {
-  border-left: none; 
+    border-left: none;
 }
 
 
@@ -771,6 +768,40 @@ footer a:hover {
     font-weight: bold;
     color: var(--c-siena);
     font-size: 1rem;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.page-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: .45rem .8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.page-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.page-btn.active {
+  background: var(--c-siena);
+  color: #fff;
+  border-color: var(--c-siena);
+}
+.page-btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 1.5rem 0;
+  grid-column: 1 / -1;
+  font-style: italic;
 }
 
 /* ================== CONTACTO ================== */
