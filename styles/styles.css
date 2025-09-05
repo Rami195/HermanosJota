@@ -224,6 +224,107 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+/* === Carrito de compras === */
+#cart-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#cart-icon {
+    cursor: pointer;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: var(--c-siena, #A0522D);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 2px 7px;
+    min-width: 22px;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 350px;
+    background: #fff;
+    color: #222;
+    box-shadow: 0 8px 30px rgba(0,0,0,.18);
+    border-radius: 12px;
+    z-index: 9999;
+    font-family: Inter, sans-serif;
+    padding: 18px 16px 16px 16px;
+}
+
+#cart-dropdown h3 {
+    margin: 0 0 12px 0;
+    color: var(--c-siena, #A0522D);
+    font-size: 1.1rem;
+}
+
+#cart-items > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#cart-items strong {
+    font-weight: 600;
+}
+
+#cart-items span {
+    font-size: 13px;
+    color: #888;
+}
+
+.cart-minus,
+.cart-plus,
+.cart-remove {
+    background: none;
+    border: none;
+    color: var(--c-siena, #A0522D);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.cart-remove {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+#cart-total {
+    margin-top: 12px;
+    font-weight: 700;
+    color: var(--c-siena, #A0522D);
+    font-size: 1rem;
+}
+
+#cart-close {
+    margin-top: 10px;
+    background: var(--c-siena, #A0522D);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
 /* Botones/links sin subrayado */
 a.btn,
 .btn {

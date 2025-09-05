@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sofá Patagonia — Hermanos Jota</title>
+    <title>HermanosJota</title>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +28,21 @@
                     <span class="logo-tit">Hermanos Jota</span>
                 </div>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/catalogo.html">Catálogo</a></li>
-                    <li><a href="/Contact.html">Contacto</a></li>
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                    <div id="cart-icon-container">
+                        <span class="material-symbols-outlined" id="cart-icon">
+                            shopping_cart
+                        </span>
+                        <span id="cart-count">0</span>
+                    </div>
+                    <div id="cart-dropdown">
+                        <h3>Carrito</h3>
+                        <div id="cart-items"></div>
+                        <div id="cart-total"></div>
+                        <button id="cart-close">Cerrar</button>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -161,6 +170,7 @@
             });
         });
     </script>
+    <script type="module" src="./carrito.js"></script>
 </body>
 
 </html>
