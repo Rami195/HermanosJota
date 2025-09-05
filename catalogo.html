@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <title>HermanosJota</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 </head>
@@ -20,12 +20,21 @@
                     <span class="logo-tit">Hermanos Jota</span>
                 </div>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/catalogo.html">Catálogo</a></li>
-                    <li><a href="/Contact.html">Contacto</a></li>
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                    <div id="cart-icon-container">
+                        <span class="material-symbols-outlined" id="cart-icon">
+                            shopping_cart
+                        </span>
+                        <span id="cart-count">0</span>
+                    </div>
+                    <div id="cart-dropdown">
+                        <h3>Carrito</h3>
+                        <div id="cart-items"></div>
+                        <div id="cart-total"></div>
+                        <button id="cart-close">Cerrar</button>
+                    </div>
                 </ul>
             </nav>
         </div>
