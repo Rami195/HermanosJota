@@ -22,30 +22,24 @@ contenedor.innerHTML = `
                 <h1 class="h1">${producto.nombre}</h1>
                 <p class="p-2 text-siena" style="font-weight:800; padding-left:0">$${producto.precio}</p>
                     <div class="mt-2">
-                    <h3 class="h2" style="font-size:1rem">Color</h3>
-                     <div class="colors">
-
-                    </div>
+                    
                     
                     <div class="mt-3">
                     <h3 class="h2" style="font-size:1rem">Medidas y peso</h3>
                     <table class="table">
                         <tr>
-                            <td>height</td>
+                            <td>Altura:</td>
                             <td>${producto.medidas.altura}</td>
                         </tr>
                         <tr>
-                            <td>width</td>
+                            <td>Ancho:</td>
                             <td>${producto.medidas.ancho}</td>
                         </tr>
                         <tr>
-                            <td>depth</td>
+                            <td>Largo:</td>
                             <td>${producto.medidas.profundidad}</td>
                         </tr>
-                        <tr>
-                            <td>weight</td>
-                            <td>${producto.medidas.peso}</td>
-                        </tr>
+                     
                     </table>
                 </div>
                 <div class="mt-3">
