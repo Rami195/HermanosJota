@@ -3,7 +3,7 @@
 ## Integrantes
 - Aaron Tournoud
 - Agustin Barbero
-- Francisco Azym
+- Francisco Azim
 - Matias Navone
 - Ramiro Martinez
 
