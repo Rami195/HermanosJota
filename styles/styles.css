@@ -227,7 +227,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* Botones/links sin subrayado */
+
 a.btn,
 .btn {
     text-decoration: none;
@@ -270,21 +270,22 @@ a.btn,
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 @media (max-width: 768px) {
-  .card-row {
-    grid-template-columns: 1fr;
-  }
+    .card-row {
+        grid-template-columns: 1fr;
+    }
 
-  .media {
-    order: 2; /* 👈 va segundo */
-    border-right: none;
-    border-bottom: 1px solid var(--line);
-  }
+    .media {
+        order: 2;
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+    }
 
-  .info {
-    order: 1; /* 👈 va primero */
-    padding-top: 16px;
-  }
+    .info {
+        order: 1;
+        padding-top: 16px;
+    }
 }
 
 .media {
@@ -294,7 +295,8 @@ a.btn,
 }
 
 .media img {
-    width: 100%;
+    width: 500px;
+    height: 400px;
     display: block;
     border-radius: 10px;
     background: #e0e0e0;
@@ -313,7 +315,7 @@ a.btn,
     padding: 24px;
 }
 
-/* Colores del producto */
+
 .colors {
     display: flex;
     align-items: center;
@@ -358,7 +360,7 @@ a.btn,
     width: 100%;
     height: 200px;
     aspect-ratio: 4/3;
-    object-fit:cover;
+    object-fit: cover;
     background: #eee;
 }
 
@@ -449,7 +451,7 @@ a.btn,
 .sobre-hj {
     padding: 200px 15% 0px 15%;
     background: var(--c-alabastro);
- 
+    cursor: default;
 }
 
 .container-sobre {
@@ -460,12 +462,12 @@ a.btn,
 }
 
 .item-sobre {
-  padding: 20px;
-  border-left: 2px solid var(--c-siena);
+    padding: 20px;
+    border-left: 2px solid var(--c-siena);
 }
 
 .item-sobre:first-child {
-  border-left: none; 
+    border-left: none;
 }
 
 
@@ -475,6 +477,7 @@ a.btn,
     color: var(--c-siena);
     font-size: 1.4rem;
     margin-bottom: 8px;
+
 }
 
 .item-sobre h4 {
@@ -516,6 +519,7 @@ h1 {
 
 .container-sub {
     border: var(--c-siena);
+    cursor: default;
 }
 
 .btn-primary {
@@ -554,6 +558,11 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171);
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
 }
 
 .product-info {
@@ -580,21 +589,10 @@ h1 {
 
 .product-img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
 }
 
-.product-img1 {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-.product-img2 {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
 
 .product-title {
     font-family: 'Playfair Display', Georgia, serif;
@@ -640,6 +638,7 @@ footer {
     width: 100%;
     font-size: 11pt;
     padding: 50px 15% 20px 15%;
+    cursor: default;
 }
 
 
@@ -733,6 +732,7 @@ footer a:hover {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1rem;
+    
 }
 
 .catalogo-header input {
@@ -791,37 +791,44 @@ footer a:hover {
 }
 
 .paginacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  flex-wrap: wrap;
-  margin: 1.5rem 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 2.5rem;
 }
 
 .page-btn {
-  border: 1px solid #ddd;
-  background: #fff;
-  padding: .45rem .8rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: .45rem .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.page-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-.page-btn.active {
-  background: var(--c-siena);
-  color: #fff;
-  border-color: var(--c-siena);
+.page-btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
-.page-btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.page-btn.active {
+    background: var(--c-siena);
+    color: #fff;
+    border-color: var(--c-siena);
+}
+
+.page-btn[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+}
 
 .empty {
-  text-align: center;
-  color: #666;
-  padding: 1.5rem 0;
-  grid-column: 1 / -1;
-  font-style: italic;
+    text-align: center;
+    color: #666;
+    padding: 1.5rem 0;
+    grid-column: 1 / -1;
+    font-style: italic;
 }
 
 /* ================== CONTACTO ================== */
@@ -893,24 +900,24 @@ footer a:hover {
 }
 
 .error {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-  display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
 }
 
 .campo-error {
-  border: 2px solid red !important;
+    border: 2px solid red !important;
 }
 
 .mensaje-exito {
-  background:#87A96B;
-  color: white;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  display: none;
-  text-align: center;
+    background: #87A96B;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+    text-align: center;
 }
 
 /* Carrito */
@@ -918,7 +925,6 @@ footer a:hover {
 #cart-icon-container {
     position: relative;
     display: inline-block;
-
     color: white;
 }
 
@@ -934,15 +940,16 @@ footer a:hover {
     right: -14px;
     background: var(--c-siena, #A0522D);
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 100;
-    border-radius: 50%;
-    padding: 2px 7px;
+    border-radius: 100%;
+    padding: 2px;
     min-width: 22px;
     text-align: center;
     display: none;
     z-index: 2;
-    border: 2px solid white;  
+    cursor: pointer;
+    border: 2px solid white;
     box-sizing: border-box;
 }
 
@@ -955,7 +962,7 @@ footer a:hover {
     width: 350px;
     background: #fff;
     color: #222;
-    box-shadow: 0 8px 30px rgba(0,0,0,.18);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .18);
     border-radius: 12px;
     z-index: 9999;
     font-family: Inter, sans-serif;
@@ -968,7 +975,7 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
-#cart-items > div {
+#cart-items>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1006,7 +1013,7 @@ footer a:hover {
     font-weight: 700;
     color: var(--c-siena, #A0522D);
     font-size: 1rem;
-    
+
 }
 
 #cart-close {
@@ -1018,4 +1025,11 @@ footer a:hover {
     padding: 7px 16px;
     cursor: pointer;
     font-size: 1rem;
+}
+
+#cart-icon-container:hover {
+    opacity: 0.7;
+    /* lo hace un poco transparente */
+    transition: opacity 0.2s ease-in-out;
+    /* transición suave */
 }

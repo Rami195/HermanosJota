@@ -1,9 +1,8 @@
-// destacados.js
 import productos from "./productos.js";
 
 const contenedor = document.getElementById("destacados");
 
-// toma hasta 4 destacados
+
 const destacados = productos.filter(p => p.destacado).slice(0, 4);
 
 // render súper simple: cada card es un <a> al detalle
