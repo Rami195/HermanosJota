@@ -212,7 +212,7 @@ export default [
             peso: 0,
             descripcion: "Silla ergonómica regulable en altura con respaldo de malla transpirable y asiento tapizado en tejido reciclado. Diseñada para largas jornadas de trabajo con máximo confort y apoyo lumbar, ideal para oficinas en casa y espacios de coworking.",
             colores: [],
-            imagen: "./img/Silla de trabajo Belgrano.png",
+            imagen: "./img/Silla de Trabajo Belgrano.png",
             destacado: false
         }
     ]
