@@ -208,3 +208,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (contenedor) contenedor.innerHTML = `<p class="error">No se pudo cargar el catálogo.</p>`;
   }
 });
+
+
+
+// nav.js
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector("nav");
+  const btn = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  if (!nav || !btn || !menu) return;
+
+  const closeMenu = () => {
+    nav.classList.remove("menu-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = nav.classList.toggle("menu-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  // cerrar haciendo click fuera
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+  });
+
+  // cerrar en resize > 750
+  const mq = window.matchMedia("(min-width: 751px)");
+  const onChange = () => { if (mq.matches) closeMenu(); };
+  mq.addEventListener ? mq.addEventListener("change", onChange) : mq.addListener(onChange);
+});

@@ -15,27 +15,40 @@
     <div>
       <nav>
         <div class="logo">
-
-          <img src="./img/logo.svg" alt="Logo Hermanos Jota" />
-          <span class="logo-tit">Hermanos Jota</span>
+          <a href="./index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="./img/logo.svg" alt="Logo Hermanos Jota" />
+            <span class="logo-tit">Hermanos Jota</span>
+          </a>
         </div>
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./catalogo.html">Catálogo</a></li>
-          <li><a href="./Contact.html">Contacto</a></li>
-          <div id="cart-icon-container">
-            <span class="material-symbols-outlined" id="cart-icon">
-              shopping_cart
-            </span>
-            <span id="cart-count">0</span>
+
+        <!-- botón hamburguesa -->
+        <button class="hamburger" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- menú colapsable -->
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="./Contact.html">Contacto</a></li>
+          </ul>
+
+          <!-- acciones (carrito) -->
+          <div class="nav-actions">
+            <div id="cart-icon-container">
+              <span class="material-symbols-outlined" id="cart-icon">shopping_cart</span>
+              <span id="cart-count">0</span>
+            </div>
+            <div id="cart-dropdown">
+              <h3>Carrito</h3>
+              <div id="cart-items"></div>
+              <div id="cart-total"></div>
+              <button id="cart-close">Cerrar</button>
+            </div>
           </div>
-          <div id="cart-dropdown">
-            <h3>Carrito</h3>
-            <div id="cart-items"></div>
-            <div id="cart-total"></div>
-            <button id="cart-close">Cerrar</button>
-          </div>
-        </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -52,7 +65,7 @@
           <label for="nombre">Nombre</label>
           <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
         </div>
-        <div class="error" id="errorNombre"></div>        
+        <div class="error" id="errorNombre"></div>
 
         <div class="campo">
           <label for="email">Email</label>
@@ -110,6 +123,7 @@
 
   <script src="contact.js"></script>
   <script type="module" src="./carrito.js"></script>
+  <script type="module" src="./app.js"></script>
 
 </body>
 
