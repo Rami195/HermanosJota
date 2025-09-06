@@ -1,0 +1,184 @@
+
+/* ================== <=1280px ================== */
+@media (max-width: 1280px) {
+    .seccioncontac {
+        padding: 20px 10%;
+    }
+}
+
+/* ================== <=1024px ================== */
+@media (max-width: 1024px) {
+    .formulario {
+        max-width: 450px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* ================== <=900px ================== */
+@media (max-width: 900px) {
+    .seccioncontac {
+        height: auto;
+        padding: 20px 7%;
+    }
+    
+    .formulario {
+        padding: 22px 26px;
+        max-width: 500px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.8rem;
+    }
+    
+    .formulario p {
+        font-size: 0.98rem;
+    }
+}
+
+/* ================== <=768px ================== */
+@media (max-width: 768px) {
+    .seccioncontac {
+        height: auto;
+        padding: 20px 6%;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    
+    .formulario {
+        padding: 20px 24px;
+        max-width: 100%;
+    }
+    
+    .formulario h1 {
+        font-size: 1.7rem;
+    }
+    
+    .formulario p {
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+    }
+    
+    .campo {
+        margin-bottom: 14px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 9px;
+        font-size: 0.98rem;
+    }
+    
+    .campo textarea {
+        min-height: 90px;
+    }
+    
+    .formulario button {
+        padding: 11px;
+        font-size: 0.98rem;
+    }
+}
+
+/* ================== <=576px ================== */
+@media (max-width: 576px) {
+    .seccioncontac {
+        padding: 15px 6%;
+        padding-top: 30px;
+    }
+    
+    .formulario {
+        padding: 18px 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    }
+    
+    .formulario h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .formulario p {
+        font-size: 0.92rem;
+        margin-bottom: 16px;
+    }
+    
+    .campo {
+        margin-bottom: 12px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+    
+    .campo textarea {
+        min-height: 80px;
+    }
+    
+    .formulario button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .error {
+        font-size: 13px;
+    }
+}
+
+/* ================== <=380px ================== */
+@media (max-width: 380px) {
+    .seccioncontac {
+        height: auto;
+        padding: 10px 4%;
+        padding-top: 25px;
+    }
+    
+    .formulario {
+        padding: 15px 18px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+    
+    .formulario p {
+        font-size: 0.88rem;
+        margin-bottom: 14px;
+    }
+    
+    .campo {
+        margin-bottom: 10px;
+    }
+    
+    .campo label {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 7px;
+        font-size: 0.92rem;
+    }
+    
+    .campo textarea {
+        min-height: 70px;
+    }
+    
+    .formulario button {
+        padding: 9px;
+        font-size: 0.92rem;
+    }
+    
+    .error {
+        font-size: 12px;
+    }
+    
+    .mensaje-exito {
+        padding: 12px;
+        font-size: 0.92rem;
+    }
+}

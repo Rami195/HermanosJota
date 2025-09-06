@@ -833,7 +833,8 @@ footer a:hover {
 
 /* ================== CONTACTO ================== */
 .seccioncontac {
-    background-color: #f5e6d3;
+    background-color: 
+#f5e6d3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -841,7 +842,8 @@ footer a:hover {
 }
 
 .formulario {
-    background: #f5e6d3;
+    background: 
+#f5e6d3;
     padding: 25px 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
@@ -851,7 +853,8 @@ footer a:hover {
 .formulario h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #87a96b;
+    color: 
+#87a96b;
     text-align: center;
 }
 
@@ -877,7 +880,8 @@ footer a:hover {
 .campo textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #87a96b;
+    border: 1px solid 
+#87a96b;
     border-radius: 8px;
     font-size: 1rem;
     outline: none;
@@ -891,7 +895,8 @@ footer a:hover {
 .formulario button {
     width: 100%;
     padding: 12px;
-    background-color: #87a96b;
+    background-color: 
+#87a96b;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -911,7 +916,8 @@ footer a:hover {
 }
 
 .mensaje-exito {
-    background: #87A96B;
+    background: 
+#87A96B;
     color: white;
     padding: 15px;
     border-radius: 5px;
