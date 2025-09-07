@@ -1,5 +1,3 @@
-// Carrito
-// Array para guardar productos
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Elementos del carrito en el HTML
