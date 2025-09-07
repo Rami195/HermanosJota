@@ -1,4 +1,3 @@
-
 /* ================== INDEX, FOOTER Y NAV ==============================================================================
 ========================================================================================================================
 ======================================================================================================================== */
@@ -42,7 +41,7 @@ nav {
 /* Botón menu oculto en desktop */
 .hamburger {
     display: none;
-    
+
     width: 40px;
     height: 40px;
     border: 0;
@@ -193,6 +192,31 @@ nav.menu-open .hamburger span:nth-child(3) {
         flex-direction: column;
         gap: 6px;
     }
+
+
+    .product-info .product-title,
+    .product-info h3 {
+        position: static !important;
+        display: block;
+        color: #222 !important;
+        margin: 0 0 6px;
+        white-space: normal;
+        overflow: visible;
+        -webkit-line-clamp: initial;
+
+    }
+
+    .product-card {
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    .product-card:hover .product-title {
+        color: var(--c-siena);
+        text-decoration: none;
+    }
+
 }
 
 /* ================== <=800px ================== */
@@ -393,5 +417,313 @@ nav.menu-open .hamburger span:nth-child(3) {
 
     .section-producDes {
         padding-bottom: 44px;
+    }
+}
+
+
+
+
+/* ====== Catálogo: responsive ====== */
+
+/* <= 1280px: reduce padding, mantiene sidebar + 3 cols */
+@media (max-width: 1280px) {
+    .catalogo {
+        padding: 36px 10%;
+        grid-template-columns: 260px 1fr;
+        gap: 1.75rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .catalogo-img {
+        height: 200px;
+    }
+}
+
+/* <= 1024px: sidebar más angosto, 2 columnas de productos */
+@media (max-width: 1024px) {
+    .catalogo {
+        padding: 32px 8%;
+        grid-template-columns: 220px 1fr;
+        gap: 1.5rem;
+    }
+
+    .catalogo-filters {
+        height: auto;
+        /* que no “fuerce” el alto */
+        position: sticky;
+        /* opcional: que siga el scroll */
+        top: 90px;
+    }
+
+    .catalogo-header {
+        justify-content: flex-start;
+        margin-bottom: .75rem;
+    }
+
+    .catalogo-header input {
+        width: 320px;
+        max-width: 100%;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .catalogo-img {
+        height: 200px;
+    }
+}
+
+/* <= 768px: sidebar arriba, productos debajo (2 columnas) */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        /* apila */
+        gap: 1rem;
+        padding: 28px 6%;
+    }
+
+    .catalogo-filters {
+        order: -1;
+        /* filtros primero */
+        position: static;
+        /* saca sticky en mobile */
+        height: auto;
+        padding: .9rem;
+        border-radius: 10px;
+    }
+
+    .catalogo-header {
+        margin: .25rem 0 1rem;
+        justify-content: stretch;
+    }
+
+    .catalogo-header input {
+        width: 100%;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .catalogo-img {
+        height: 180px;
+    }
+}
+
+/* <= 576px: 1 columna */
+@media (max-width: 576px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-img {
+        height: 200px;
+    }
+}
+
+/* Accesibilidad/UX: los enlaces-card sin subrayado y con hover suave */
+.catalogo-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.catalogo-card:hover .catalogo-info h3 {
+    text-decoration: none;
+    transform: none;
+    filter: brightness(1.02);
+}
+
+
+
+/* =========================================== Contacto responsive ========================================
+
+/* ================== <=1280px ================== */
+@media (max-width: 1280px) {
+    .seccioncontac {
+        padding: 20px 10%;
+    }
+}
+
+/* ================== <=1024px ================== */
+@media (max-width: 1024px) {
+    .formulario {
+        max-width: 450px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* ================== <=900px ================== */
+@media (max-width: 900px) {
+    .seccioncontac {
+        height: auto;
+        padding: 20px 7%;
+    }
+    
+    .formulario {
+        padding: 22px 26px;
+        max-width: 500px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.8rem;
+    }
+    
+    .formulario p {
+        font-size: 0.98rem;
+    }
+}
+
+/* ================== <=768px ================== */
+@media (max-width: 768px) {
+    .seccioncontac {
+        height: auto;
+        padding: 20px 6%;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    
+    .formulario {
+        padding: 20px 24px;
+        max-width: 100%;
+    }
+    
+    .formulario h1 {
+        font-size: 1.7rem;
+    }
+    
+    .formulario p {
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+    }
+    
+    .campo {
+        margin-bottom: 14px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 9px;
+        font-size: 0.98rem;
+    }
+    
+    .campo textarea {
+        min-height: 90px;
+    }
+    
+    .formulario button {
+        padding: 11px;
+        font-size: 0.98rem;
+    }
+}
+
+/* ================== <=576px ================== */
+@media (max-width: 576px) {
+    .seccioncontac {
+        padding: 15px 6%;
+        padding-top: 30px;
+    }
+    
+    .formulario {
+        padding: 18px 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    }
+    
+    .formulario h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .formulario p {
+        font-size: 0.92rem;
+        margin-bottom: 16px;
+    }
+    
+    .campo {
+        margin-bottom: 12px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+    
+    .campo textarea {
+        min-height: 80px;
+    }
+    
+    .formulario button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .error {
+        font-size: 13px;
+    }
+}
+
+/* ================== <=380px ================== */
+@media (max-width: 380px) {
+    .seccioncontac {
+        height: auto;
+        padding: 10px 4%;
+        padding-top: 25px;
+    }
+    
+    .formulario {
+        padding: 15px 18px;
+    }
+    
+    .formulario h1 {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+    
+    .formulario p {
+        font-size: 0.88rem;
+        margin-bottom: 14px;
+    }
+    
+    .campo {
+        margin-bottom: 10px;
+    }
+    
+    .campo label {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .campo input,
+    .campo textarea {
+        padding: 7px;
+        font-size: 0.92rem;
+    }
+    
+    .campo textarea {
+        min-height: 70px;
+    }
+    
+    .formulario button {
+        padding: 9px;
+        font-size: 0.92rem;
+    }
+    
+    .error {
+        font-size: 12px;
+    }
+    
+    .mensaje-exito {
+        padding: 12px;
+        font-size: 0.92rem;
     }
 }
