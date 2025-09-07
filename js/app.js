@@ -97,12 +97,11 @@ function goToPage(n) {
 }
 
 // ---------- Simula fetch ----------
-function fetchProducts() {
+async function fetchProducts() {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(productos), 800); // 800 ms de “carga”
+    setTimeout(() => resolve(productos), 800); // simula 800ms de carga
   });
 }
-
 // ---------- Render de cards ----------
 function mostrarProductos(lista) {
   if (!contenedor) {
