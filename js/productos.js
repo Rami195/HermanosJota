@@ -2,7 +2,7 @@ export default [
         {
             id: 1,
             nombre: "Sofa Patagonia",
-            precio: 10000,
+            precio: 2300000,
             stock: 10,
             categoria: "Sofa",
             medidas: {
@@ -20,7 +20,7 @@ export default [
         {
             id: 2,
             nombre: "Aparador Uspallata",
-            precio: 1000,
+            precio: 995000,
             stock: 10,
             categoria: "Otros",
             medidas: {
@@ -38,7 +38,7 @@ export default [
         {
             id: 3,
             nombre: "Biblioteca Recoleta",
-            precio: 1000,
+            precio: 1200000,
             stock: 10,
             categoria: "Otros",
             medidas: {
@@ -56,7 +56,7 @@ export default [
         {
             id: 4,
             nombre: "Butaca Mendoza",
-            precio: 1000,
+            precio: 700000,
             stock: 10,
             categoria: "Sofa",
             medidas: {
@@ -74,7 +74,7 @@ export default [
          {
             id: 5,
             nombre: "Sillón Copacabana",
-            precio: 1000,
+            precio: 1050000,
             stock: 10,
             categoria: "Sofa",
             medidas: {
@@ -92,7 +92,7 @@ export default [
         {
             id: 6,
             nombre: "Mesa de Centro Araucaria",
-            precio: 1000,
+            precio: 1500000,
             stock: 10,
             categoria: "Mesa",
             medidas: {
@@ -110,7 +110,7 @@ export default [
         {
             id: 7,
             nombre: "Mesa de noche Aconcagua",
-            precio: 1000,
+            precio: 350000,
             stock: 10,
             categoria: "Mesa",
             medidas: {
@@ -128,7 +128,7 @@ export default [
         {
             id: 8,
             nombre: "Cama Nehuquen",
-            precio: 1000,
+            precio: 1800000,
             stock: 10,
             categoria: "cama",
             medidas: {
@@ -146,7 +146,7 @@ export default [
         {
             id: 9,
             nombre: "Mesa comedor Pampa",
-            precio: 1000,
+            precio: 2200000,
             stock: 10,
             categoria: "Mesa",
             medidas: {
@@ -164,7 +164,7 @@ export default [
         {
             id: 10,
             nombre: "Sillas Córdoba",
-            precio: 1000,
+            precio: 350000,
             stock: 10,
             categoria: "silla",
             medidas: {
@@ -182,7 +182,7 @@ export default [
         {
             id: 11,
             nombre: "Escritorio Costa",
-            precio: 1000,
+            precio: 850000,
             stock: 10,
             categoria: "Otros",
             medidas: {
@@ -200,7 +200,7 @@ export default [
         {
             id: 12,
             nombre: "Silla de trabajo Belgrano",
-            precio: 1000,
+            precio: 790000,
             stock: 10,
             categoria: "Otros",
             medidas: {
